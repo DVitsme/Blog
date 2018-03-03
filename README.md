@@ -1,4 +1,4 @@
-#The point of this application is two fold
+# The point of this application is two fold
 
 1. The First is to continue honing my skills with express and mongodb I think i have a pretty good understanding of basic CRUD applications with the exception of delete routes. There has to be a better way then the way I am currently attacking it.
 
