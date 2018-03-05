@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-Category = require('../models/category.js');
+Category = require ('../models/category.js');
 
 
 router.get('/', (req,res,next) => {

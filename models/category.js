@@ -23,3 +23,18 @@ module.exports.addCategory = function (category, callback) {
   // body...
   Category.create(category, callback);
 };
+
+//get single category by id
+module.exports.getCategoryById = (id, callback) => {
+  Category.findById(id, callback);
+};
+
+//Up date Category
+module.exports.updateCategory = (query, update, options, callback) => {
+  Category.findOneAndUpdate(query, update, options, callback);
+};
+
+//Remove Catagory
+module.exports.removeCategory = (query, callback) => {
+  Category.remove(query, callback);
+};
