@@ -2,7 +2,12 @@ extends layout
 
 block content
   h1 #{title}
-  a(href='/manage/articles/add') Add articles
-    br
-    a(href='/') Back to Index
-  
+  form(method='post',action='/categories/add')
+    .form-group
+      label Title:
+      input(name='title', type='text')
+    .form-group
+      label Description:
+      textarea(name='description')
+    input(type='submit', name='submit', value='Save')
+    a(href='manage/categories') Back

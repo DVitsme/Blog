@@ -5,4 +5,21 @@ html
     link(rel="stylesheet", href='/bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel="stylesheet", href='/css/style.css')
   body
+    nav.navbar.navbar-light.bg-faded.justify-content-between.flex-nowrap.flex-row
+        ul.navbar-nav.flex-row.mr-auto
+          a.navbar-brand(href='/') Home
+          li.nav-item
+            a.nav-link(href='/categories') View Categories
+          li.nav-item
+            a.nav-link(href='/articles') View Articles
+          li.nav-item
+            a.nav-link(href='/manage/categories/add') Add Category
+          li.nav-item
+            a.nav-link(href='/manage/articles/add') Add Articles
+          li.nav-item
+            a.nav-link(href='/manage/categories') Manage Catagories
+          li.nav-item
+            a.nav-link(href='/manage/articles') Manage Articles
+
+
     block content
